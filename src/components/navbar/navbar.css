@@ -1,0 +1,56 @@
+.nav-flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+  max-width: 1152px;
+  margin: auto;
+  gap: 1.25rem; /*픽셀은 고정. rem부모 사이즈에 따라 유동적 16px = 1rem */
+}
+
+.nav-logo{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.nav-search-input{
+  background-color: rgba(255.255.255.0.75);
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  box-shadow: 4px 4px 3px 3px rgba(121, 120, 120, 0.25);
+  transition: box-shadow 0.3s;
+  width: 300px;
+}
+
+.nav-search-input:focus{
+  box-shadow: 4px 4px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link-ul{
+  display: flex;
+  gap: 1.5rem;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.nav-link-li{
+  color: black;
+  transition: color 0.3s;
+}
+
+.nav-link-li:hover{
+  color: rgb(158, 140, 105);
+}
+
+@media (min-width:1024px){
+  .nav-flex-container{
+    gap: 0;
+  }
+  .nav-search-input{
+    width: 400px;
+  }
+}
+
